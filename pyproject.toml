@@ -40,3 +40,5 @@ module-name = "base16_admin"
 [tool.pyright]
 reportMissingTypeStubs = "none"
 reportIncompatibleVariableOverride = "none"
+reportUnknownVariableType = "none"
+reportAny = "none"

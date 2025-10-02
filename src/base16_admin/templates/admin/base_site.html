@@ -1,4 +1,4 @@
-{% extends "admin/base_site.html" %} {% block extrastyle %} {{ block.super }}
+{% extends "admin/base_site.html" %} {% block extrastyle %} {% load static %}
 <link
   rel="stylesheet"
   href="{% static 'base16_admin/themes/' %}{{ BASE16_THEME }}.css"
