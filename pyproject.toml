@@ -1,0 +1,22 @@
+[project]
+name = "django-base16-admin"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "stabldev", email = "thestabldev@gmail.com" }]
+requires-python = ">=3.13"
+dependencies = [
+    "django>=5.2.7",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.20,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = "src"
+module-name = "base16_admin"
+
+[tool.pyright]
+reportMissingTypeStubs = "none"
+reportIncompatibleVariableOverride = "none"
