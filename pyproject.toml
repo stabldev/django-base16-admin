@@ -1,6 +1,6 @@
 [project]
 name = "django-base16-admin"
-version = "0.1.0"
+version = "0.1.1"
 description = "Base16 color themes for Django Admin."
 readme = "README.md"
 license = { text = "MIT" }
