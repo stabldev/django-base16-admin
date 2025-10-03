@@ -29,8 +29,8 @@ INSTALLED_APPS = [
 BASE16_THEME = "circus"  # default = "circus"
 ```
 
-Available themes are stored in  
-[base16_admin/static/base16_admin/themes/](/src/base16_admin/static/base16_admin/themes/).
+Available themes are stored in
+[base16_admin/static/admin/themes/](/src/base16_admin/static/admin/themes/).
 
 3. Run `collectstatic` (prod):
 
@@ -42,7 +42,7 @@ python manage.py collectstatic
 
 ## Contributing
 
-Contributions are welcome!  
+Contributions are welcome!\
 Feel free to open issues or submit PRs for new Base16 themes or improvements.
 
 ## License
