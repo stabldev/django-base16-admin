@@ -70,4 +70,4 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Base16 theme
-BASE16_THEME = "tokyo-city-light"
+BASE16_THEME = "circus"
