@@ -187,20 +187,20 @@ h5 {
   letter-spacing: 1px;
 }
 
-ul > li {
-  list-style-type: square;
-  padding: 1px 0;
+li,
+dt,
+dd {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
 }
 
 li ul {
   margin-bottom: 0;
 }
 
-li,
-dt,
-dd {
-  font-size: 0.8125rem;
-  line-height: 1.25rem;
+ul > li {
+  list-style-type: square;
+  padding: 1px 0;
 }
 
 dt {
@@ -318,7 +318,7 @@ a.quiet:visited {
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 /* TABLES */
@@ -491,6 +491,7 @@ form .button {
   font-weight: normal;
   font-size: 0.8125rem;
 }
+
 .form-row div.help {
   padding: 2px 3px;
 }
