@@ -45,12 +45,12 @@ python manage.py collectstatic
 
 Here are the currently available Base16 themes for Django Admin:
 
-| Theme Name         | Key                   | Preview                                | Theme CSS |
-|-------------------|---------------------|---------------------------------------|-----------|
-| Circus             | `circus`             | [Preview](/docs/assets/circus.png)   | [`circus.css`](/src/base16_admin/static/admin/themes/circus.css) |
-| Cupcake            | `cupcake`            | [Preview](/docs/assets/cupcake.png)  | [`cupcake.css`](/src/base16_admin/static/admin/themes/cupcake.css) |
-| Tokyo City Dark    | `tokyo-city-dark`    | [Preview](/docs/assets/tokyo-city-dark.png) | [`tokyo-city-dark.css`](/src/base16_admin/static/admin/themes/tokyo-city-dark.css) |
-| Tokyo City Light   | `tokyo-city-light`   | [Preview](/docs/assets/tokyo-city-light.png) | [`tokyo-city-light.css`](/src/base16_admin/static/admin/themes/tokyo-city-light.css) |
+| Theme Name       | Key                | Preview                                      | Theme CSS                                                                            |
+| ---------------- | ------------------ | -------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Circus           | `circus`           | [Preview](/docs/assets/circus.png)           | [`circus.css`](/src/base16_admin/static/admin/themes/circus.css)                     |
+| Cupcake          | `cupcake`          | [Preview](/docs/assets/cupcake.png)          | [`cupcake.css`](/src/base16_admin/static/admin/themes/cupcake.css)                   |
+| Tokyo City Dark  | `tokyo-city-dark`  | [Preview](/docs/assets/tokyo-city-dark.png)  | [`tokyo-city-dark.css`](/src/base16_admin/static/admin/themes/tokyo-city-dark.css)   |
+| Tokyo City Light | `tokyo-city-light` | [Preview](/docs/assets/tokyo-city-light.png) | [`tokyo-city-light.css`](/src/base16_admin/static/admin/themes/tokyo-city-light.css) |
 
 ## Contributing
 
