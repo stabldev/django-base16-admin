@@ -27,10 +27,11 @@
   --hairline-color: var(--base01);
   --border-color: var(--base02);
 
-  --error-fg: var(--base08);
+  --success-fg: var(--base0B);
   --warning-fg: var(--base0A);
+  --error-fg: var(--base08);
   --message-success-bg: var(--base0B);
-  --message-warning-bg: var(--base00);
+  --message-warning-bg: var(--base0A);
   --message-error-bg: var(--base08);
 
   --darkened-bg: var(--base01);
@@ -678,26 +679,39 @@ ul.messagelist li {
   display: block;
   font-weight: 400;
   font-size: 0.8125rem;
-  padding: 10px 10px 10px 45px;
+  padding: 10px 10px 10px 65px;
   /*margin: 0 0 10px 0;*/
-  background: var(--message-success-bg) url(../img/icon-yes.svg) 40px 12px
-    no-repeat;
+  background: color-mix(in oklab, var(--message-success-bg), var(--body-bg) 75%)
+    url(../img/icon-yes.svg) 40px 12px no-repeat;
   background-size: 16px auto;
-  color: var(--body-fg);
+  color: var(--success-fg);
   word-break: break-word;
+  border: 1px solid
+    color-mix(in oklab, var(--message-success-bg), var(--body-bg) 25%);
 }
 
 ul.messagelist li.warning {
-  background: var(--message-warning-bg) url(../img/icon-alert.svg) 20px 14px
-    no-repeat;
-  background-size: 14px auto;
+  background: color-mix(in oklab, var(--message-warning-bg), var(--body-bg) 75%)
+    url(../img/icon-alert.svg) 40px 14px no-repeat;
+  background-size: 16px auto;
   color: var(--warning-fg);
+  border-color: color-mix(
+    in oklab,
+    var(--message-warning-bg),
+    var(--body-bg) 25%
+  );
 }
 
 ul.messagelist li.error {
-  background: var(--message-error-bg) url(../img/icon-no.svg) 40px 12px
-    no-repeat;
+  background: color-mix(in oklab, var(--message-error-bg), var(--body-bg) 75%)
+    url(../img/icon-no.svg) 40px 14px no-repeat;
   background-size: 16px auto;
+  color: var(--error-fg);
+  border-color: color-mix(
+    in oklab,
+    var(--message-error-bg-bg),
+    var(--body-bg) 25%
+  );
 }
 
 .errornote {
@@ -707,9 +721,13 @@ ul.messagelist li.error {
   padding: 10px 12px;
   margin: 0 0 10px 0;
   color: var(--error-fg);
-  border: 1px solid var(--error-fg);
+  border: 1px solid color-mix(in oklab, var(--error-fg), var(--body-bg) 25%);
   border-radius: 4px;
-  background-color: var(--body-bg);
+  background-color: color-mix(
+    in oklab,
+    var(--message-error-bg),
+    var(--body-bg) 75%
+  );
   background-position: 5px 12px;
   overflow-wrap: break-word;
 }
