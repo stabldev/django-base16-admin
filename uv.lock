@@ -27,7 +27,7 @@ wheels = [
 
 [[package]]
 name = "django-base16-admin"
-version = "0.1.4"
+version = "0.1.5"
 source = { editable = "." }
 dependencies = [
     { name = "django" },
