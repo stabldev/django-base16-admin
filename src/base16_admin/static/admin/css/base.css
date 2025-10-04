@@ -1,9 +1,12 @@
 /* VARIABLE DEFINITIONS */
 :root {
   --primary: var(--base0D);
+  --primary-fg: var(--base05);
   --secondary: var(--base09);
   --accent: var(--base05);
-  --primary-fg: var(--base05);
+  --success: var(--base0B);
+  --warning: var(--base0A);
+  --error: var(--base08);
 
   --body-fg: var(--base06);
   --body-bg: var(--base00);
@@ -26,13 +29,6 @@
 
   --hairline-color: var(--base01);
   --border-color: var(--base02);
-
-  --success-fg: var(--base0B);
-  --warning-fg: var(--base0A);
-  --error-fg: var(--base08);
-  --message-success-bg: var(--base0B);
-  --message-warning-bg: var(--base0A);
-  --message-error-bg: var(--base08);
 
   --darkened-bg: var(--base01);
   --selected-bg: var(--base01);
@@ -681,37 +677,28 @@ ul.messagelist li {
   font-size: 0.8125rem;
   padding: 10px 10px 10px 65px;
   /*margin: 0 0 10px 0;*/
-  background: color-mix(in oklab, var(--message-success-bg), var(--body-bg) 75%)
+  background: color-mix(in oklab, var(--success), var(--body-bg) 75%)
     url(../img/icon-yes.svg) 40px 12px no-repeat;
   background-size: 16px auto;
-  color: var(--success-fg);
+  color: var(--success);
   word-break: break-word;
-  border: 1px solid
-    color-mix(in oklab, var(--message-success-bg), var(--body-bg) 25%);
+  border: 1px solid color-mix(in oklab, var(--success), var(--body-bg) 25%);
 }
 
 ul.messagelist li.warning {
-  background: color-mix(in oklab, var(--message-warning-bg), var(--body-bg) 75%)
+  background: color-mix(in oklab, var(--warning), var(--body-bg) 75%)
     url(../img/icon-alert.svg) 40px 14px no-repeat;
   background-size: 16px auto;
-  color: var(--warning-fg);
-  border-color: color-mix(
-    in oklab,
-    var(--message-warning-bg),
-    var(--body-bg) 25%
-  );
+  color: var(--warning);
+  border-color: color-mix(in oklab, var(--warning), var(--body-bg) 25%);
 }
 
 ul.messagelist li.error {
-  background: color-mix(in oklab, var(--message-error-bg), var(--body-bg) 75%)
+  background: color-mix(in oklab, var(--error), var(--body-bg) 75%)
     url(../img/icon-no.svg) 40px 14px no-repeat;
   background-size: 16px auto;
-  color: var(--error-fg);
-  border-color: color-mix(
-    in oklab,
-    var(--message-error-bg-bg),
-    var(--body-bg) 25%
-  );
+  color: var(--error);
+  border-color: color-mix(in oklab, var(--error), var(--body-bg) 25%);
 }
 
 .errornote {
@@ -720,14 +707,10 @@ ul.messagelist li.error {
   display: block;
   padding: 10px 12px;
   margin: 0 0 10px 0;
-  color: var(--error-fg);
-  border: 1px solid color-mix(in oklab, var(--error-fg), var(--body-bg) 25%);
+  color: var(--error);
+  border: 1px solid color-mix(in oklab, var(--error), var(--body-bg) 25%);
   border-radius: 4px;
-  background-color: color-mix(
-    in oklab,
-    var(--message-error-bg),
-    var(--body-bg) 75%
-  );
+  background-color: color-mix(in oklab, var(--error), var(--body-bg) 75%);
   background-position: 5px 12px;
   overflow-wrap: break-word;
 }
@@ -735,7 +718,7 @@ ul.messagelist li.error {
 ul.errorlist {
   margin: 0 0 4px;
   padding: 0;
-  color: var(--error-fg);
+  color: var(--error);
   background: var(--body-bg);
 }
 
@@ -781,7 +764,7 @@ td ul.errorlist li {
 td ul.errorlist + input,
 td ul.errorlist + select,
 td ul.errorlist + textarea {
-  border: 1px solid var(--error-fg);
+  border: 1px solid var(--error);
 }
 
 .description {
